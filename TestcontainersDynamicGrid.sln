@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestcontainersDynamicGrid", "TestcontainersDynamicGrid\TestcontainersDynamicGrid.csproj", "{4DF24DDD-C0B9-4399-AC9D-BC778D31C594}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestcontainersSeleniumStandalone", "TestcontainersSeleniumStandalone\TestcontainersSeleniumStandalone.csproj", "{D5CE8DAF-ECD6-4B41-BBEF-4AAB188CFA86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DF24DDD-C0B9-4399-AC9D-BC778D31C594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF24DDD-C0B9-4399-AC9D-BC778D31C594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF24DDD-C0B9-4399-AC9D-BC778D31C594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF24DDD-C0B9-4399-AC9D-BC778D31C594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5CE8DAF-ECD6-4B41-BBEF-4AAB188CFA86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5CE8DAF-ECD6-4B41-BBEF-4AAB188CFA86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5CE8DAF-ECD6-4B41-BBEF-4AAB188CFA86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5CE8DAF-ECD6-4B41-BBEF-4AAB188CFA86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
