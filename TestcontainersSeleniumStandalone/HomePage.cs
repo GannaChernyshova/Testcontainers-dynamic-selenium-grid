@@ -1,3 +1,4 @@
+using DotNet.Testcontainers.Builders;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using ExpectedConditions = OpenQA.Selenium.Support.UI.ExpectedConditions;
@@ -28,6 +29,8 @@ public class HomePage
   {
     By element = By.XPath("//*/h1");
     _wait.Until(ExpectedConditions.ElementIsVisible(element));
+    ((ITakesScreenshot) _driver)
+      .GetScreenshot().SaveAsFile(Path.Combine(CommonDirectoryPath.GetSolutionDirectory().DirectoryPath, "StandaloneGetPageHeader.png"), ScreenshotImageFormat.Png);
     return _driver.FindElement(element).Text;
   }
 
@@ -36,6 +39,9 @@ public class HomePage
   {
     By element = By.XPath("//*[@id=\"content\"]/main/section[2]/div/div[2]/div[1]/button[1]");
     _wait.Until(ExpectedConditions.ElementIsVisible(element));
+    //capture screenshot along file name
+    ((ITakesScreenshot) _driver)
+      .GetScreenshot().SaveAsFile(Path.Combine(CommonDirectoryPath.GetSolutionDirectory().DirectoryPath, "StandaloneGetSelectedLanguage.png"), ScreenshotImageFormat.Png);
     return _driver.FindElement(element).Text;
   }
 }
